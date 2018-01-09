@@ -12,6 +12,11 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+if [ -f $DIR/oh-my-zsh/custom/themes/powerlevel9k ]; then
+    mkdir -p $DIR/oh-my-zsh/custom/themes
+    git clone https://github.com/bhilburn/powerlevel9k.git $DIR/oh-my-zsh/custom/themes/powerlevel9k
+fi
+
 # conf files
 ln -s $DIR/zshrc ~/.zshrc
 ln -s $DIR/vimrc ~/.vimrc
