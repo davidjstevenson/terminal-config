@@ -103,3 +103,9 @@ alias zshconfig='vim ~/.zshrc; . ~/.zshrc'
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator host dir dir_writable virtualenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs time)
+
+export PATH=/usr/local/bin:$PATH
+export PERL5LIB=/usr/local/lib/perl5/site_perl
+
+. $HOME/.terminal-config-path
+export PATH=$PATH:$TERMCONFIGPATH/bin

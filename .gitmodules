@@ -4,3 +4,6 @@
 [submodule "vim_runtime"]
 	path = vim_runtime
 	url = https://github.com/amix/vimrc.git
+[submodule "git/git-foresta"]
+	path = git/git-foresta
+	url = https://github.com/takaaki-kasai/git-foresta.git
