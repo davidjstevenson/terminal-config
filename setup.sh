@@ -13,7 +13,7 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-if [ -f $DIR/oh-my-zsh/custom/themes/powerlevel9k ]; then
+if [ ! -d $DIR/oh-my-zsh/custom/themes/powerlevel9k ]; then
     mkdir -p $DIR/oh-my-zsh/custom/themes
     git clone https://github.com/bhilburn/powerlevel9k.git $DIR/oh-my-zsh/custom/themes/powerlevel9k
 fi
@@ -28,6 +28,8 @@ ln -s $DIR/gitconfig ~/.gitconfig
 # conf folders
 ln -s $DIR/vim_runtime ~/.vim_runtime
 ln -s $DIR/oh-my-zsh ~/.oh-my-zsh
+
+echo "export TERMCONFIGPATH=$DIR" > ~/.terminal-config-path
 
 echo "installed"
 

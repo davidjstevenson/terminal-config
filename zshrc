@@ -1,3 +1,5 @@
+export TERM=xterm-256color
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -97,7 +99,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cat=colorize
+alias ccat=colorize
 alias zshconfig='vim ~/.zshrc; . ~/.zshrc'
 
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
