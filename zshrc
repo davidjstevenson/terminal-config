@@ -5,6 +5,7 @@ export TERM=xterm-256color
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export TERM="xterm-256color"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -69,7 +70,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 export PATH=~/.cargo/bin:$PATH;
-export PATH=$HOME/anaconda2/bin/:$PATH;
 
 # User configuration
 
@@ -107,7 +107,8 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator host dir dir_writable virtuale
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs time)
 
 export PATH=/usr/local/bin:$PATH
-export PERL5LIB=/usr/local/lib/perl5/site_perl
+export CC=/usr/bin/clang
+export LD=/usr/bin/clang
 
 . $HOME/.terminal-config-path
 export PATH=$PATH:$TERMCONFIGPATH/bin
